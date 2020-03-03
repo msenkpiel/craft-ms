@@ -4,8 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c789b685772e7561a526e6eae70c163b",
+    "content-hash": "301f3715e2e6b2402c7a3d1f7d3d39c2",
     "packages": [
+        {
+            "name": "adigital/cookie-consent-banner",
+            "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/a-digital/cookie-consent-banner.git",
+                "reference": "2a44ded8382c48cd9765c3f269051cfd1de76226"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/a-digital/cookie-consent-banner/zipball/2a44ded8382c48cd9765c3f269051cfd1de76226",
+                "reference": "2a44ded8382c48cd9765c3f269051cfd1de76226",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Cookie Consent Banner",
+                "handle": "cookie-consent-banner",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://github.com/a-digital/cookie-consent-banner/blob/master/CHANGELOG.md",
+                "class": "adigital\\cookieconsentbanner\\CookieConsentBanner"
+            },
+            "autoload": {
+                "psr-4": {
+                    "adigital\\cookieconsentbanner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark @ A Digital",
+                    "homepage": "https://adigital.agency"
+                }
+            ],
+            "description": "Add a configurable cookie consent banner to the website.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "cookie consent banner",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "time": "2020-01-20T16:56:17+00:00"
+        },
         {
             "name": "cebe/markdown",
             "version": "1.2.1",
@@ -322,16 +373,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.8",
+            "version": "3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "eca660ae7dde806bba54cc69d7a67d50e7745a76"
+                "reference": "fa28541499591b458e11f61c21016365da7120f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/eca660ae7dde806bba54cc69d7a67d50e7745a76",
-                "reference": "eca660ae7dde806bba54cc69d7a67d50e7745a76",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/fa28541499591b458e11f61c21016365da7120f5",
+                "reference": "fa28541499591b458e11f61c21016365da7120f5",
                 "shasum": ""
             },
             "require": {
@@ -415,7 +466,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-02-22T01:20:21+00:00"
+            "time": "2020-02-28T19:59:36+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",

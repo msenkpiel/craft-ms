@@ -16,7 +16,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: d465b412-69a2-4578-9aa0-0f08638c4c65
-dateModified: 1583149886
+dateModified: 1583233088
 email:
   fromEmail: marco.senkpiel@gmail.com
   fromName: 'Craft Demo'
@@ -327,7 +327,7 @@ system:
   edition: solo
   live: true
   name: 'Craft Demo'
-  schemaVersion: 3.4.9
+  schemaVersion: 3.4.10
   timeZone: Europe/Paris
 tagGroups:
   cb465fb4-84fc-4112-bf4b-bbfb325179a3:
