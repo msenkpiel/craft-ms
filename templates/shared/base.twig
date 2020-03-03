@@ -1,0 +1,40 @@
+{# Create a global set query with the 'handle' and 'siteId' parameters #}
+{% set globalSet = craft.globalSets().handle('websiteSettings').one() %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %} :: {{ globalSet.websiteTitle }}</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                {% set menu = craft.entries().section('menu').all() %}
+                <ul>
+                    {% nav link in menu %}
+                        <li>
+
+                            {% if link.relatedEntry|length %}
+                                <a href="{{ link.relatedEntry[0].url }}">{{ link.title }}</a>
+                            {% else %}
+                                <a href="{{ link.customUrl }}">{{ link.title }}</a>
+                            {% endif %}
+
+                            {% ifchildren %}
+                                <ul>
+                                    {% children %}
+                                </ul>
+                            {% endifchildren %}
+                        </li>
+                    {% endnav %}
+                </ul>
+
+            </nav>
+        </header>
+
+        {% block body %}{% endblock %}
+        <footer>
+            &copy; Copyright {{ "now"|date("Y") }} by me!
+        </footer>
+    </body>
+</html>

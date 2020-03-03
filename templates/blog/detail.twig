@@ -1,0 +1,32 @@
+{% extends "shared/base.twig" %}
+
+{# Get the requested blogpost slug from the URL #}
+{% set requestedSlug = craft.app.request.getSegment(2) %}
+
+{# Fetch the blogpost with that slug #}
+{% set blogpost = craft.entries().slug(requestedSlug|literal).one() %}
+
+
+{% block title %}
+    {% if blogpost %}
+        {{ blogpost.title }}
+    {% else %}
+        Not Found
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    {% if blogpost %}
+        <small>{{ blogpost.title }}</small>
+        <h1>{{ blogpost.headline }}</h1>
+
+        {% if blogpost.keyvisual|length %}
+            {% set image = blogpost.keyvisual[0] %}
+            <img class="thumb" src="{{ image.getUrl('cropCenter') }}">
+        {% endif %}
+
+        <p>{{ blogpost.text|nl2br }}</p>
+    {% else %}
+        Not Found
+    {% endif %}
+{% endblock %}

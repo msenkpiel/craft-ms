@@ -1,0 +1,12 @@
+{% extends "shared/base.twig" %}
+
+{% set entry = craft.entries().section('aboutPage').slug('static-pages').one() %}
+
+{% block title %}
+    {{ entry.title }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ entry.headline }}</h1>
+    <p>{{ entry.text }}</p>
+{% endblock %}
