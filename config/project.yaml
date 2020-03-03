@@ -1,0 +1,351 @@
+categoryGroups:
+  62ad1b87-86b2-4a12-8c02-eca645f1c331:
+    fieldLayouts:
+      96399d94-6d80-44d3-9faa-b6fdded48ddf:
+        tabs:
+          -
+            name: 'Tab 1'
+            sortOrder: 1
+    handle: customGroup
+    name: 'Custom Group'
+    siteSettings:
+      e528f7ed-3e74-4eaf-bfd8-6c332a6e9a70:
+        hasUrls: true
+        template: ''
+        uriFormat: 'custom-group/{slug}'
+    structure:
+      maxLevels: null
+      uid: d465b412-69a2-4578-9aa0-0f08638c4c65
+dateModified: 1583149886
+email:
+  fromEmail: marco.senkpiel@gmail.com
+  fromName: 'Craft Demo'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  808d891a-7c38-4cdc-b10f-06b46ec0df87:
+    name: Common
+  859ccbb7-47d0-470c-accd-df9810e13cec:
+    name: 'Static Pages'
+  b7879b5a-f9b8-44e1-81d4-2ca6c03aa2f0:
+    name: Globals
+  b8a78c5e-694b-4073-a09d-6c6d1c92feaa:
+    name: Blog
+fields:
+  137a8142-4f23-43c3-9598-a1f17ffbe9b8:
+    contentColumnType: string
+    fieldGroup: b8a78c5e-694b-4073-a09d-6c6d1c92feaa
+    handle: keyvisual
+    instructions: ''
+    name: Keyvisual
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:5d5b1554-6ea4-4c32-bbd9-44a130d7e866'
+      defaultUploadLocationSubpath: 'blog-images/{author.username}/'
+      limit: ''
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an Image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:5d5b1554-6ea4-4c32-bbd9-44a130d7e866'
+      singleUploadLocationSubpath: 'blog-images/{author.username}/'
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  43acf3d1-4c55-4c7a-a678-bebbf34cd8ec:
+    contentColumnType: string(255)
+    fieldGroup: 808d891a-7c38-4cdc-b10f-06b46ec0df87
+    handle: customUrl
+    instructions: ''
+    name: 'Custom Url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  4b83372e-e561-41cf-9bf2-68abf64c1403:
+    contentColumnType: text
+    fieldGroup: 859ccbb7-47d0-470c-accd-df9810e13cec
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c780a0cb-f712-44bc-a475-bbfbde70f524:
+    contentColumnType: string
+    fieldGroup: 808d891a-7c38-4cdc-b10f-06b46ec0df87
+    handle: relatedEntry
+    instructions: ''
+    name: 'Related Entry'
+    searchable: false
+    settings:
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  c90d10bd-eec8-4cba-bc75-2d4516fb4ed2:
+    contentColumnType: text
+    fieldGroup: 859ccbb7-47d0-470c-accd-df9810e13cec
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d26cd4c0-2ee7-4f6d-8ede-9d2440c5cd16:
+    contentColumnType: string
+    fieldGroup: b8a78c5e-694b-4073-a09d-6c6d1c92feaa
+    handle: tags
+    instructions: ''
+    name: Tags
+    searchable: true
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      limit: null
+      localizeRelations: false
+      selectionLabel: ''
+      source: 'taggroup:cb465fb4-84fc-4112-bf4b-bbfb325179a3'
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Tags
+  e80e9b99-578b-43a2-80f7-c5f2a4de459b:
+    contentColumnType: string(512)
+    fieldGroup: b7879b5a-f9b8-44e1-81d4-2ca6c03aa2f0
+    handle: websiteTitle
+    instructions: ''
+    name: 'Website Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 128
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Name Your Site'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+globalSets:
+  52c6fb57-9a2b-4230-9365-c02542c1d733:
+    fieldLayouts:
+      9165a889-428f-45a6-9bed-6b6f716a238a:
+        tabs:
+          -
+            fields:
+              e80e9b99-578b-43a2-80f7-c5f2a4de459b:
+                required: false
+                sortOrder: 1
+            name: Globals
+            sortOrder: 1
+    handle: websiteSettings
+    name: 'Website Settings'
+imageTransforms:
+  205ce0e0-b774-4d23-8803-e6aabf96b3c5:
+    format: null
+    handle: cropCenter
+    height: 400
+    interlace: none
+    mode: crop
+    name: 'Crop Center'
+    position: center-center
+    quality: null
+    width: 800
+routes:
+  8d578477-4dee-4687-87a0-ab76effd88ad:
+    siteUid: null
+    sortOrder: 1
+    template: blog/index
+    uriParts:
+      - blog
+    uriPattern: blog
+sections:
+  0d417b38-0265-4e70-b9f1-403a8da3b486:
+    enableVersioning: true
+    entryTypes:
+      09fa2a9c-9436-465f-9374-31d64532a1c2:
+        fieldLayouts:
+          6ef66121-bcb2-4750-a6a9-ce28944adbcb:
+            tabs:
+              -
+                fields:
+                  4b83372e-e561-41cf-9bf2-68abf64c1403:
+                    required: false
+                    sortOrder: 2
+                  c90d10bd-eec8-4cba-bc75-2d4516fb4ed2:
+                    required: false
+                    sortOrder: 1
+                name: Text
+                sortOrder: 1
+              -
+                fields:
+                  137a8142-4f23-43c3-9598-a1f17ffbe9b8:
+                    required: false
+                    sortOrder: 1
+                  d26cd4c0-2ee7-4f6d-8ede-9d2440c5cd16:
+                    required: false
+                    sortOrder: 2
+                name: Blog
+                sortOrder: 2
+        handle: blog
+        hasTitleField: true
+        name: Blog
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: blog
+    name: Blog
+    propagationMethod: all
+    siteSettings:
+      e528f7ed-3e74-4eaf-bfd8-6c332a6e9a70:
+        enabledByDefault: true
+        hasUrls: true
+        template: blog\detail
+        uriFormat: 'blog/{slug}'
+    type: channel
+  11b78992-6237-4e92-8760-cce85783f1c9:
+    enableVersioning: false
+    entryTypes:
+      c01bbd0b-32fc-48fc-962b-6807e0f2fcda:
+        fieldLayouts:
+          2ea0a443-8617-4200-a727-38532d7cd0fc:
+            tabs:
+              -
+                fields:
+                  43acf3d1-4c55-4c7a-a678-bebbf34cd8ec:
+                    required: false
+                    sortOrder: 1
+                  c780a0cb-f712-44bc-a475-bbfbde70f524:
+                    required: false
+                    sortOrder: 2
+                name: Menu
+                sortOrder: 1
+        handle: menu
+        hasTitleField: true
+        name: Menu
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: menu
+    name: Menu
+    propagationMethod: all
+    siteSettings:
+      e528f7ed-3e74-4eaf-bfd8-6c332a6e9a70:
+        enabledByDefault: true
+        hasUrls: false
+        template: null
+        uriFormat: ''
+    type: channel
+  c1a11bc2-2d62-4d48-b96a-521b2cf0f438:
+    enableVersioning: false
+    entryTypes:
+      41c9e618-173c-4f74-ab29-0d51e197fb2b:
+        fieldLayouts:
+          a3bc40b6-184b-42a8-a0ec-e7120660f2b4:
+            tabs:
+              -
+                fields:
+                  4b83372e-e561-41cf-9bf2-68abf64c1403:
+                    required: true
+                    sortOrder: 2
+                  c90d10bd-eec8-4cba-bc75-2d4516fb4ed2:
+                    required: true
+                    sortOrder: 1
+                name: 'Static Pages'
+                sortOrder: 1
+        handle: staticPage
+        hasTitleField: true
+        name: 'About Page'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: Title
+    handle: aboutPage
+    name: 'About Page'
+    propagationMethod: all
+    siteSettings:
+      e528f7ed-3e74-4eaf-bfd8-6c332a6e9a70:
+        enabledByDefault: true
+        hasUrls: true
+        template: static-page
+        uriFormat: about
+    type: single
+siteGroups:
+  c1e5fe81-16b2-4358-b890-6546ae152264:
+    name: 'Craft Demo'
+sites:
+  e528f7ed-3e74-4eaf-bfd8-6c332a6e9a70:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Craft Demo'
+    primary: true
+    siteGroup: c1e5fe81-16b2-4358-b890-6546ae152264
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: 'Craft Demo'
+  schemaVersion: 3.4.9
+  timeZone: Europe/Paris
+tagGroups:
+  cb465fb4-84fc-4112-bf4b-bbfb325179a3:
+    handle: blogTags
+    name: 'Blog Tags'
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: 'user-images/{username}/'
+  photoVolumeUid: 5d5b1554-6ea4-4c32-bbd9-44a130d7e866
+  requireEmailVerification: true
+volumes:
+  5d5b1554-6ea4-4c32-bbd9-44a130d7e866:
+    handle: imageStore
+    hasUrls: true
+    name: ImageStore
+    settings:
+      path: '@webroot/assets/'
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: '@web/assets/'
